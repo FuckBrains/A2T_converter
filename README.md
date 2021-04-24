@@ -5,7 +5,8 @@ You can transcribe short audio files with 'multi_lang_audio_2_text_sm', long aud
   
 Converting self-recorded speeches requires a functioning, turned on microphone. The program will automatically detect and choose the standard microphone.  
   
-Note that the software is only applicable to audio data in supported languages. Transcribing data of unsopported languages with this API can cause wrong and unintentional transcriptions. Currently supported languages include  
+Note that the software is only applicable to audio data in supported languages. Transcribing data of unsopported languages with this API can cause wrong and unintentional transcriptions.  
+Currently supported languages include:  
 English, French, German, Italian, Russian, Dutch, Mandarin (Han Yu), Spanish, Turkish, Swedish, Portuguese, Japanese, Korean, Polish, Czech, Finnish, Hebrew, Hungarian, Indonesian, Malaysian, Norwegian, Romanian, Serbian, Slovak and Afrikaans.
 
 ## Type handling

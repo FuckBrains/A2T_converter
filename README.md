@@ -3,6 +3,8 @@
 Welcome to A2T, the easily usable tool to transcribe audio information into text files. Did you ever hear an audiobook or watch a YouTube video and wished to be able to have a transcript of the spoken word? If the answer is yes, then this project might be helpful.  
 You can transcribe short audio files with 'multi_lang_audio_2_text_sm', long audio files with 'multi_lang_audio_2_text_la', YouTube videos ('youtube_2_text') and even self-recorded speeches ('microphone_2_text') into text files, thereby ensuring that the spoken word is saved and can be reread later.  
   
+Converting self-recorded speeches requires a functioning, turned on microphone. The program will automatically detect and choose the standard microphone.  
+  
 Note that the software is currently applicable to audio data in English, French, German, Italian and Russian. Transcribing data of unsopported languages with this API can cause wrong and unintentional transcriptions.
 
 ## Type handling

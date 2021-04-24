@@ -28,7 +28,7 @@ while True:
 	if url == 'q':
 		break
 	# Asking for the language of the audio file
-	lang = input("Please specify the language of the submitted YouTube video.\nPress '1' for French.\nPress '2' for German.\nPress '3' for Italian.\nPress '4' for Russian.\nLeave blank for default (English).\n")
+	lang = input("\nPlease specify the language of the submitted YouTube video.\nPress '1' for French.\nPress '2' for German.\nPress '3' for Italian.\nPress '4' for Russian.\nLeave blank for default (English).\n")
 	if lang == '1':
 		language = 'fr-Fr'
 	if lang == '2':

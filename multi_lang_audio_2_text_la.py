@@ -26,19 +26,72 @@ while True:
 	if path == 'q':
 		break
 	# Asking for the language of the audio file
-	lang = input("\nPlease specify the language of the submitted audio file.\nPress '1' for French.\nPress '2' for German.\nPress '3' for Italian.\nPress '4' for Russian.\nLeave blank for default (English).\n")
+	prompt = """Please specify the language of the submitted YouTube video.
+	Press '1' for French.			Press '2' for German.			Press '3' for Italian.
+	Press '4' for Russian.			Press '5' for Dutch.			Press '6' for Mandarin (Han Yu).
+	Press '7' for Spanish.  		Press '8' for Turkish.  		Press '9' for Swedish.
+	Press '10' for Portuguese.		Press '11' for Japanese.  		Press '12' for Korean.
+	Press '13' for Polish. 			Press '14' for Czech.  			Press '15' for Finnish.
+	Press '16' for Hebrew. 			Press '17' for Hungarian.		Press '18' for Indonesian.
+	Press '19' for Malaysian.		Press '20' for Norwegian.		Press '21' for Romanian.
+	Press '22' for Serbian.   		Press '23' for Slovak.   		Press '24' for Afrikaans.
+	Leave blank for default (English).\n"""
+
+	lang = input(prompt)
+
 	if lang == '1':
-		language = 'fr-Fr'
+		language = 'fr-FR'
 	if lang == '2':
-		language = 'de-De'
+		language = 'de-DE'
 	if lang == '3':
-		language = 'it-It'
+		language = 'it-IT'
 	if lang == '4':
-		language == 'ru-Ru'
+		language == 'ru-RU'
+	if lang == '5':
+		language = 'nl-NL'
+	if lang == '6':
+		language = 'zh-CN'
+	if lang == '7':
+		language = 'es-ES'
+	if lang == '8':
+		language = 'tr'
+	if lang == '9':
+		language = 'sv-SE'
+	if lang == '10':
+		language = 'pt-PT'
+	if lang == '11':
+		language = 'ja'
+	if lang == '12':
+		language = 'ko'
+	if lang == '13':
+		language = 'pl'
+	if lang == '14':
+		language = 'cz'
+	if lang == '15':
+		language = 'fi'
+	if lang == '16':
+		language = 'he'
+	if lang == '17':
+		language = 'hu'
+	if lang == '18':
+		language = 'id'
+	if lang == '19':
+		language = 'ms-MY'
+	if lang == '20':
+		language = 'no-NO'
+	if lang == '21':
+		language = 'ro-RO'
+	if lang == '22':
+		language = 'sr-SP'
+	if lang == '23':
+		language = 'sk'
+	if lang == '24':
+		language = 'af'
 	if lang == '':
-		language = 'en-Us'
+		language = 'en-US'
 	if lang == 'q':
 		break
+
 
 	# Creating a speech recognition object/ Initializing the recognizer
 	r = sr.Recognizer()

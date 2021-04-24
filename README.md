@@ -19,3 +19,14 @@ After downloading and storing this repository, open a python terminal window, na
 ## Code Documentation
 
 The documentation for this project can be found under 'docs/build/html/index.html'. Navigate to the file on your local machine and open it in a web browser.
+
+## Resources & Links
+
+https://www.python.org/ (Python)  
+https://www.anaconda.com/ (Anaconda)  
+https://pytube.io/en/latest/ (Pytube)  
+https://github.com/jiaaro/pydub (Pydub)  
+https://pypi.org/project/SpeechRecognition/ (SpeechRecognition)  
+https://cloud.google.com/speech-to-text (Google Cloud Speech-to-Text API)
+https://www.sphinx-doc.org/en/master/# (Sphinx)  
+https://readthedocs.org/ (Read the Docs)  

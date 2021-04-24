@@ -17,7 +17,7 @@ print("..............................................................")
 print("..............................................................")
 print("..............................................................")
 print("##############################################################")
-print("Hello! Welcome to YouTube2T - the easy way to get a transcript from a YT video.")
+print("Hello! Welcome to YouTube2Text - the easy way to get a transcript from a YT video.")
 print("Enter 'q' to quit any time.")
 
 while True:

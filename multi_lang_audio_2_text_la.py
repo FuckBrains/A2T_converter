@@ -23,6 +23,20 @@ while True:
 	path = input("Please specify the full path to your audio file.\nYour entry should look like this: 'C:/User/...' but without quotes.\n")
 	if path == 'q':
 		break
+	# Asking for the language of the audio file
+	lang = input("Please specify the language of the submitted audio file.\nPress '1' for French.\nPress '2' for German.\nPress '3' for Italian.\nPress '4' for Russian.\nLeave blank for default (English).\n")
+	if lang == '1':
+		language = 'fr-Fr'
+	if lang == '2':
+		language = 'de-De'
+	if lang == '3':
+		language = 'it-It'
+	if lang == '4':
+		language == 'ru-Ru'
+	if lang == '':
+		language = 'en-Us'
+	if lang == 'q':
+		break
 
 	# Creating a speech recognition object/ Initializing the recognizer
 	r = sr.Recognizer()
@@ -55,7 +69,7 @@ while True:
 				audio_listened = r.record(source)
 				# Trying to convert to text
 				try:
-					text = r.recognize_google(audio_listened)
+					text = r.recognize_google(audio_listened, language = language)
 				except sr.UnknownValueError as e:
 					print("Error: ", str(e))
 				else:

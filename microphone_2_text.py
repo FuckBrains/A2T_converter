@@ -1,29 +1,28 @@
-"""This module contains a general speech-to-text-converter for small to medium sized audio files"""
+"""This module contains a microphone audio to text converter"""
 
 import speech_recognition as sr
+import os
+from pydub import AudioSegment
+from pydub.silence import split_on_silence
 
 # Welcome message and information
 print("###########################################################")
 print("...........................................................")
 print("...........................................................")
 print("...........................................................")
-print("############## A2T SM by Sven Eschlbeck 2021 ##############")
+print("############## Mic2T by Sven Eschlbeck 2021 ###############")
 print("...........................................................")
 print("...........................................................")
 print("...........................................................")
 print("###########################################################")
-print("Hello! Welcome to Audio2Text SM.")
+print("Hello! Welcome to Microphone2Text.")
 print("Enter 'q' to quit any time.")
 print("-----------------------------------------------------")
 
 
 while True:
-	# Asking user to specify the path to the audio file
-	path = input("Please specify the full path to your audio file.\nYour entry should look like this: 'C:/User/...' but without quotes.\n")
-	if path == 'q':
-		break
-	# Asking for the language of the audio file
-	lang = input("Please specify the language of the submitted audio file.\nPress '1' for French.\nPress '2' for German.\nPress '3' for Italian.\nPress '4' for Russian.\nLeave blank for default (English).\n")
+	# Asking for the language of the given speech
+	lang = input("Please specify your language.\nPress '1' for French.\nPress '2' for German.\nPress '3' for Italian.\nPress '4' for Russian.\nLeave blank for default (English).\n")
 	if lang == '1':
 		language = 'fr-Fr'
 	if lang == '2':
@@ -37,19 +36,41 @@ while True:
 	if lang == 'q':
 		break
 
+	# Asking for the duration of the planned recording
+	length = input("\nHow long do you plan to speak?\nDefine a time span, press '1' for 30 seconds.\nPress '2' for 60 seconds.\nPress '3' for 90 seconds.\nPress '4' for 120 seconds.\nPress '5' for 300 seconds.\nLeave blank for default (10 seconds).\n")
+	if length == '1':
+		duration = 30
+	if length == '2':
+		duration = 60
+	if length == '3':
+		duration = 90
+	if length == '4':
+		duration = 120
+	if length == '5':
+		duration = 300
+	if length == '':
+		duration = 10
+	if length == 'q':
+		break
+
+
 	# Initializing the recognizer
 	r = sr.Recognizer()
 
-	# Open the audio file
-	with sr.AudioFile(path) as source:
-		# Listen for the data (loading audio into memory)
-		audio_data = r.record(source)
-		# Recognize speech and convert to text
-		# Command uploads file to Google Cloud, using their A.I. to convert it and returns the text transcription
+	# Defining microphone as input source
+	with sr.Microphone() as source:
+		# Users starts speaking
+		print("\nSpeak now!")
+		print("-----------------------------------------------------")
+		# Read the audio data from the default microphone
+		audio_data = r.record(source, duration = duration)
+		# Printing wait statement
+		print("Recognizing voice...")
+		# Convert speech to text
 		text = r.recognize_google(audio_data, language = language)
 		# Print text
 		print("-----------------------------------------------------")
-		print(f"Output:\n{text}")
+		print(f"Record:\n{text}")
 		print("-----------------------------------------------------")
 
 	question_save = input("Do you want to save the transcription to a text file? [y/n]")
@@ -70,11 +91,11 @@ while True:
 		print("-----------------------------------------------------")
 
 	if question_save == 'n':
-		continue
+		pass
 	if question_save == 'q':
 		break
 
-	question_more = input("Do you wish to convert another file? [y/n]")
+	question_more = input("Do you wish to record another speech? [y/n]")
 	if question_more == 'y':
 		print("-----------------------------------------------------")
 		continue

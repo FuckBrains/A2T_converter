@@ -19,6 +19,8 @@ print("..............................................................")
 print("##############################################################")
 print("Hello! Welcome to YouTube2Text - the easy way to get a transcript from a YT video.")
 print("Enter 'q' to quit any time.")
+print("-----------------------------------------------------")
+
 
 while True:
 	# Asking the user for specific url
@@ -94,13 +96,13 @@ while True:
 		return whole_text
 
 	# Print text
-	print("--------------------------------------------------------")
+	print("------------------------------------------------------------------")
 	print("Transcribing audio batchwise...\nThis may take a moment.")
-	print("--------------------------------------------------------")
+	print("------------------------------------------------------------------")
 	print("Creating directory 'audio_batches' to store audio chunks...")
-	print("--------------------------------------------------------")
+	print("------------------------------------------------------------------")
 	print("---------------------------------\nFull text:\n", get_large_audio_transcription(path))
-	print("--------------------------------------------------------")
+	print("------------------------------------------------------------------")
 
 
 	question_save = input("Do you want to save the transcription to a text file? [y/n]\nNote: If you choose 'n' the files will be overwritten with the next download.\n")
@@ -116,9 +118,9 @@ while True:
 			# Write the text into the file
 			f.write(f"{whole_text}")
 
-		print("-------------------------------------------")
+		print("-----------------------------------------------------")
 		print("Your text file is created...\nGo to the folder you specified to access it.")
-		print("-------------------------------------------")
+		print("-----------------------------------------------------")
 
 	if question_save == 'n':
 		continue
@@ -129,7 +131,7 @@ while True:
 	# Asking user if he/she wishes to continue
 	question_more = input("Do you wish to convert another file? [y/n]")
 	if question_more == 'y':
-		print("--------------------------------------------------------")
+		print("------------------------------------------------------------------")
 		continue
 	if question_more == 'n':
 		break

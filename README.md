@@ -5,6 +5,11 @@ You can transcribe short audio files, long audio files and even YouTube videos i
   
 Note that the software is currently only applicable to audio data in the English language. Transcribing foreign language data with this API can cause wrong and unintentional transcriptions.
 
+## Type handling
+
+The audio converters 'audio_2_text_sm' and 'audio_2_text_la' currently need '.wav' files as a prerequesite. Necessary proprocessings and typecastings can be done here: https://online-audio-converter.com/  
+The YouTube-to-Text converter 'youtube_2_text' can process any input without the necessity of typecasting.
+
 ## Controls
 
 The program is very intuitive. Just follow the command line instructions and you'll be fine.  

@@ -7,5 +7,5 @@ You can transcribe short audio files, long audio files and even YouTube videos i
 
 The program is very intuitive. Just follow the command line instructions and you'll be fine.  
 To quit the program at any time, press <kbd>Q</kbd> whenever a question is asked or click on the red 'X' in the upper right cmd window corner.  
-If asked a question, reply by either pressing <kbd>Y</kbd> for 'yes', <kbd>N</kbd> for 'no', or <kbd>Q</kbd> to quit the game.  
+If asked a question, reply by either pressing <kbd>Y</kbd> for 'yes', <kbd>N</kbd> for 'no', or <kbd>Q</kbd> to quit the program.  
 To confirm the given answer, press <kbd>Enter</kbd>.  

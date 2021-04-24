@@ -6,9 +6,9 @@ from pydub import AudioSegment
 from pydub.silence import split_on_silence
 
 # Welcome message and information
-print("########################################################")
-print("############## A2T by Sven Eschlbeck 2021 ##############")
-print("########################################################")
+print("###########################################################")
+print("############## A2T LA by Sven Eschlbeck 2021 ##############")
+print("###########################################################")
 print("Hello! Welcome to A2T.")
 print("Enter 'q' to quit any time.")
 

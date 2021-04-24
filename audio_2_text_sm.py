@@ -3,9 +3,9 @@
 import speech_recognition as sr
 
 # Welcome message and information
-print("########################################################")
-print("############## A2T by Sven Eschlbeck 2021 ##############")
-print("########################################################")
+print("###########################################################")
+print("############## A2T SM by Sven Eschlbeck 2021 ##############")
+print("###########################################################")
 print("Hello! Welcome to A2T.")
 print("Enter 'q' to quit any time.")
 

@@ -1,17 +1,17 @@
 Auto Generated Documentation
 ============================
 
-Module 'audio_2_text_sm'
-------------------------
-.. automodule:: audio_2_text_sm
+Module 'multi_lang_audio_2_text_sm'
+-----------------------------------
+.. automodule:: multi_lang_audio_2_text_sm
    :members:
    :undoc-members:
    :private-members:
    :special-members:
 
-Module 'audio_2_text_la'
-------------------------
-.. automodule:: audio_2_text_la
+Module 'multi_lang_audio_2_text_la'
+-----------------------------------
+.. automodule:: multi_lang_audio_2_text_la
    :members:
    :undoc-members:
    :private-members:

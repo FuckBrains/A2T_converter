@@ -25,6 +25,22 @@ while True:
 	url = input("Please specify the full url to the YouTube video.\nYour entry should look like this: 'https://www.youtube.com/...' but without quotes.\n")
 	if url == 'q':
 		break
+	# Asking for the language of the audio file
+	lang = input("Please specify the language of the submitted YouTube video.\nPress '1' for French.\nPress '2' for German.\nPress '3' for Italian.\nPress '4' for Russian.\nLeave blank for default (English).\n")
+	if lang == '1':
+		language = 'fr-Fr'
+	if lang == '2':
+		language = 'de-De'
+	if lang == '3':
+		language = 'it-It'
+	if lang == '4':
+		language == 'ru-Ru'
+	if lang == '':
+		language = 'en-Us'
+	if lang == 'q':
+		break
+
+
 	# Downloading the video with the highest possible quality and naming it video_file
 	yt = YouTube(url).streams.first().download('youtube', filename='video_file')
 
@@ -66,7 +82,7 @@ while True:
 				audio_listened = r.record(source)
 				# Trying to convert to text
 				try:
-					text = r.recognize_google(audio_listened)
+					text = r.recognize_google(audio_listened, language = language)
 				except sr.UnknownValueError as e:
 					print("Error: ", str(e))
 				else:

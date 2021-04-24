@@ -11,7 +11,7 @@ print("Enter 'q' to quit any time.")
 
 
 while True:
-	# Asking user to specify the pyth to the audio file
+	# Asking user to specify the path to the audio file
 	path = input("Please specify the full path to your audio file.\nYour entry should look like this: 'C:/User/...' but without quotes.\n")
 	if path == 'q':
 		break

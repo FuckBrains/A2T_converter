@@ -31,11 +31,33 @@ while True:
 		print(f"Output:\n{text}")
 		print("-------------------------------------------")
 
-	question = input("Do you wish to convert another file? [y/n]")
-	if question == 'y':
+	question_save = input("Do you want to save the transcription to a text file? [y/n]")
+	if question_save == 'y':
+		# Ask for the destination folder where the text should be stored
+		destination_folder = input("Please specify the full path to the desired destination folder.\nYour entry should look like this: 'C:/User/...' but without quotes.\n")
+		# Ask for the file name
+		file_name = input("Please specify the desired file name.\n")
+
+		# Creating individual user path from destination folder and file name
+		user_path = f"{destination_folder}/{file_name}"
+		with open(user_path, 'w') as f:
+			# Write the text into the file
+			f.write(f"{text}")
+
+		print("-------------------------------------------")
+		print("Your text file is created...\nGo to the folder you specified to access it.")
+		print("-------------------------------------------")
+
+	if question_save == 'n':
+		continue
+	if question_save == 'q':
+		break
+
+	question_more = input("Do you wish to convert another file? [y/n]")
+	if question_more == 'y':
 		print("-------------------------------------------")
 		continue
-	if question == 'n':
+	if question_more == 'n':
 		break
-	if question == 'q':
+	if question_more == 'q':
 		break

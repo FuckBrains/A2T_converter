@@ -25,6 +25,7 @@ while True:
 	# Splitting the audio file into batches and applying speech recognition to the batches
 	def get_large_audio_transcription(path):
 		"""Splitting audio file into batches and applying speech recognition to each batch"""
+		global whole_text # Necessary to access the variable later
 		# Opening audio file using pydub
 		sound = AudioSegment.from_wav(path)
 		# Splitting audio file where silence is 700 ms or longer
@@ -68,12 +69,36 @@ while True:
 	print("---------------------------------\nFull text:\n", get_large_audio_transcription(path))
 	print("--------------------------------------------------------")
 
+
+	question_save = input("Do you want to save the transcription to a text file? [y/n]")
+	if question_save == 'y':
+		# Ask for the destination folder where the text should be stored
+		destination_folder = input("Please specify the full path to the desired destination folder.\nYour entry should look like this: 'C:/User/...' but without quotes.\n")
+		# Ask for the file name
+		file_name = input("Please specify the desired file name.\n")
+
+		# Creating individual user path from destination folder and file name
+		user_path = f"{destination_folder}/{file_name}"
+		with open(user_path, 'w') as f:
+			# Write the text into the file
+			f.write(f"{whole_text}")
+
+		print("-------------------------------------------")
+		print("Your text file is created...\nGo to the folder you specified to access it.")
+		print("-------------------------------------------")
+
+	if question_save == 'n':
+		continue
+	if question_save == 'q':
+		break
+
+
 	# Asking user if he/she wishes to continue
-	question = input("Do you wish to convert another file? [y/n]")
-	if question == 'y':
+	question_more = input("Do you wish to convert another file? [y/n]")
+	if question_more == 'y':
 		print("--------------------------------------------------------")
 		continue
-	if question == 'n':
+	if question_more == 'n':
 		break
-	if question == 'q':
+	if question_more == 'q':
 		break

@@ -8,4 +8,10 @@ You can transcribe short audio files, long audio files and even YouTube videos i
 The program is very intuitive. Just follow the command line instructions and you'll be fine.  
 To quit the program at any time, press <kbd>Q</kbd> whenever a question is asked or click on the red 'X' in the upper right cmd window corner.  
 If asked a question, reply by either pressing <kbd>Y</kbd> for 'yes', <kbd>N</kbd> for 'no', or <kbd>Q</kbd> to quit the program.  
-To confirm the given answer, press <kbd>Enter</kbd>.  
+To confirm the given answer, press <kbd>&#9166;</kbd>.  
+
+## Hardware & Software Requirements
+
+This program can be run without much computing power. It can be executed on any modern device and all major operating systems (Windows/ macOS/ Linux) fullfilling the software requirements.  
+A2T is written in python and currently only available as a python module. Therefore, you need to download python in order to execute the program files (.py files). The required storage capacity depends on the user's behavior. It can range from a few MB when only transcribing small audio files to multiple GB when downloading and converting large video files.  
+After downloading and storing this repository, open a python terminal window, navigate to the repository directory and type e.g. 'audio_2_text_la.py'. As soon as you hit <kbd>&#9166;</kbd>, the program will start.

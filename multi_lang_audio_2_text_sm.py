@@ -22,6 +22,7 @@ while True:
 	path = input("Please specify the full path to your audio file.\nYour entry should look like this: 'C:/User/...' but without quotes.\n")
 	if path == 'q':
 		break
+		
 	# Asking for the language of the audio file
 	prompt = """Please specify the language of the submitted YouTube video.
 	Press '1' for French.			Press '2' for German.			Press '3' for Italian.

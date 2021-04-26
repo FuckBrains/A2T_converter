@@ -148,7 +148,7 @@ while True:
 	if question_save == 'q':
 		break
 
-	question_more = input("Do you wish to record another speech? [y/n]")
+	question_more = input("Do you wish to record another speech? [y/n]\n")
 	if question_more == 'y':
 		print("-----------------------------------------------------")
 		continue

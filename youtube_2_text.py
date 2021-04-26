@@ -7,38 +7,64 @@ from pytube import YouTube
 from pydub import AudioSegment
 from pydub.silence import split_on_silence
 
-# Welcome message and information
-print("\n##############################################################")
-print("..............................................................")
-print("..............................................................")
-print("..............................................................")
-print("############## YouTube2T by Sven Eschlbeck 2021 ##############")
-print("..............................................................")
-print("..............................................................")
-print("..............................................................")
-print("##############################################################")
-print("Hello! Welcome to YouTube2Text - the easy way to get a transcript from a YT video.")
-print("Enter 'q' to quit any time.")
-print("-----------------------------------------------------")
+
+banner = r'''
+
+
+
+		__   __  _______
+		\ \_/ / |__   __|
+		 \   /     | |
+		  |_|      |_|
+		                     #####
+		                        ##
+		                     #####
+		                     ##
+		                     #####
+		                      	       _______
+		                     	      |__   __|
+		                                 | |
+		                                 |_|	
+         [Sven Eschlbeck] [2021]
+
+
+##############################################################################
+##############################################################################
+
+Hello! Welcome to 'YouTube2Audio'.
+
+Enter 'q' to quit any time.
+
+##############################################################################
+##############################################################################
+'''
+
+print(banner)
+
+
+prompt = r"""
+Please specify the language of the submitted YouTube video.
+
+Press '1' for French.			Press '2' for German.			Press '3' for Italian.
+Press '4' for Russian.			Press '5' for Dutch.			Press '6' for Mandarin (Han Yu).
+Press '7' for Spanish.  		Press '8' for Turkish.  		Press '9' for Swedish.
+Press '10' for Portuguese.		Press '11' for Japanese.  		Press '12' for Korean.
+Press '13' for Polish. 			Press '14' for Czech.  			Press '15' for Finnish.
+Press '16' for Hebrew. 			Press '17' for Hungarian.		Press '18' for Indonesian.
+Press '19' for Malaysian.		Press '20' for Norwegian.		Press '21' for Romanian.
+Press '22' for Serbian.   		Press '23' for Slovak.   		Press '24' for Afrikaans.
+
+Leave blank for default (English).
+"""
 
 
 while True:
 	# Asking the user for specific url
-	url = input("Please specify the full url to the YouTube video.\nYour entry should look like this: 'https://www.youtube.com/...' but without quotes.\n")
+	url = input("\nPlease specify the full url to the YouTube video.\nYour entry should look like this: 'https://www.youtube.com/...' but without quotes.\n")
 	if url == 'q':
 		break
-	# Asking for the language of the audio file
-	prompt = """Please specify the language of the submitted YouTube video.
-	Press '1' for French.			Press '2' for German.			Press '3' for Italian.
-	Press '4' for Russian.			Press '5' for Dutch.			Press '6' for Mandarin (Han Yu).
-	Press '7' for Spanish.  		Press '8' for Turkish.  		Press '9' for Swedish.
-	Press '10' for Portuguese.		Press '11' for Japanese.  		Press '12' for Korean.
-	Press '13' for Polish. 			Press '14' for Czech.  			Press '15' for Finnish.
-	Press '16' for Hebrew. 			Press '17' for Hungarian.		Press '18' for Indonesian.
-	Press '19' for Malaysian.		Press '20' for Norwegian.		Press '21' for Romanian.
-	Press '22' for Serbian.   		Press '23' for Slovak.   		Press '24' for Afrikaans.
-	Leave blank for default (English).\n"""
 
+	print("\n------------------------------------------------------------------------------")
 	lang = input(prompt)
 
 	if lang == '1':
@@ -148,21 +174,21 @@ while True:
 		return whole_text
 
 	# Print text
-	print("------------------------------------------------------------------")
+	print("\n------------------------------------------------------------------------------\n")
 	print("Transcribing audio batchwise...\nThis may take a moment.")
-	print("------------------------------------------------------------------")
+	print("\n------------------------------------------------------------------------------\n")
 	print("Creating directory 'audio_batches' to store audio chunks...")
-	print("------------------------------------------------------------------")
-	print("---------------------------------\nFull text:\n", get_large_audio_transcription(path))
-	print("------------------------------------------------------------------")
+	print("\n------------------------------------------------------------------------------\n")
+	print("\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nFull text:\n\n", get_large_audio_transcription(path))
+	print("\n------------------------------------------------------------------------------\n")
 
 
 	question_save = input("Do you want to save the transcription to a text file? [y/n]\nNote: If you choose 'n' the files will be overwritten with the next download.\n")
 	if question_save == 'y':
 		# Ask for the destination folder where the text should be stored
-		destination_folder = input("Please specify the full path to the desired destination folder.\nYour entry should look like this: 'C:/User/...' but without quotes.\n")
+		destination_folder = input("\nPlease specify the full path to the desired destination folder.\nYour entry should look like this: 'C:/User/...' but without quotes.\n")
 		# Ask for the file name
-		file_name = input("Please specify the desired file name.\nYour entry should look like this: 'example_file.txt' but without quotes.\n")
+		file_name = input("\nPlease specify the desired file name.\nYour entry should look like this: 'example_file.txt' but without quotes.\n")
 
 		# Creating individual user path from destination folder and file name
 		user_path = f"{destination_folder}/{file_name}"
@@ -170,20 +196,20 @@ while True:
 			# Write the text into the file
 			f.write(f"{whole_text}")
 
-		print("-----------------------------------------------------")
+		print("\n------------------------------------------------------------------------------\n")
 		print("Your text file is created...\nGo to the folder you specified to access it.")
-		print("-----------------------------------------------------")
+		print("\n------------------------------------------------------------------------------\n")
 
 	if question_save == 'n':
-		continue
+		pass
 	if question_save == 'q':
 		break
 
 
 	# Asking user if he/she wishes to continue
-	question_more = input("Do you wish to convert another file? [y/n]")
+	question_more = input("Do you wish to convert another file? [y/n]\n")
 	if question_more == 'y':
-		print("------------------------------------------------------------------")
+		print("\n------------------------------------------------------------------------------\n")
 		continue
 	if question_more == 'n':
 		break

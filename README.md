@@ -57,7 +57,7 @@ To confirm the given answer, press <kbd>&#9166;</kbd>.
 
 This program can be run without much computing power. It can be executed on any modern device using Microsoft's Windows operating system. Other OS may work but are not specifically supported.  
 A2T is written in python and currently only available in the form of multiple python modules. Therefore, you need to download python in order to execute the program files (.py files). The required storage capacity depends on the user's behavior. It can range from a few MB when only transcribing small audio files to multiple GB when downloading and converting large video files.  
-After downloading and storing this repository, open a python terminal window, navigate to the repository directory and type e.g. 'audio_2_text_la.py'. As soon as you hit <kbd>&#9166;</kbd>, the program will start.
+After downloading and storing this repository, open a python terminal window, navigate to the repository directory and type e.g. 'multi_lang_audio_2_text_la.py'. As soon as you hit <kbd>&#9166;</kbd>, the program will start.
 
 ## Code Documentation
 

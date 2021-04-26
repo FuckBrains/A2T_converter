@@ -1,11 +1,19 @@
 # A2T_converter
 
-Welcome to A2T, the easily usable tool to transcribe audio information into text files. Did you ever hear an audiobook or watch a YouTube video and wished to be able to have a transcript of the spoken word? If the answer is yes, then this project might be helpful.  
-You can transcribe short audio files with 'multi_lang_audio_2_text_sm', long audio files with 'multi_lang_audio_2_text_la', YouTube videos ('youtube_2_text') and even self-recorded speeches ('microphone_2_text') into text files, thereby ensuring that the spoken word is saved and can be reread later.  
-  
-Converting self-recorded speeches requires a functioning, turned on microphone. The program will automatically detect and choose the standard microphone.  
+Welcome to A2T, the easily usable tool to transcribe audio information into text files. Did you ever hear an audiobook or watch a YouTube video and wished to be able to have a transcript of the spoken word? If the answer is yes, then this project might be helpful.
+
+## Converter types
+
+- YouTube -> convert YouTube videos by just typing in a specific url
+- videos -> convert any local stored video file (e.g. zoom call recording, twitter video, facebook video, tiktok video, etc.)
+- short audio files -> convert WhatsApp voice messages, short audio news and more
+- long audio files -> convert audio books, poems, stories, political speeches and more
+- self recorded speeches -> convert microphone input into text
+
+## Languages
   
 Note that the software is only applicable to audio data in supported languages. Transcribing data of unsopported languages with this API can cause wrong and unintentional transcriptions.  
+
 Currently supported languages include:  
 - English  
 - French
@@ -36,7 +44,7 @@ Currently supported languages include:
 ## Type handling
 
 The audio converters 'multi_lang_audio_2_text_sm' and 'multi_lang_audio_2_text_la' currently need '.wav' files as a prerequesite. Necessary proprocessings and typecastings can be done here: https://online-audio-converter.com/  
-The YouTube-to-Text converter 'youtube_2_text' can process any input without the necessity of typecasting.
+The YouTube-to-Text converter 'youtube_2_text' can process any input without the necessity of typecasting, the video transcriber can handle all common video formats.
 
 ## Controls
 

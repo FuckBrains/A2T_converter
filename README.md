@@ -44,7 +44,7 @@ Currently supported languages include:
 ## Type handling
 
 The audio converters 'multi_lang_audio_2_text_sm' and 'multi_lang_audio_2_text_la' currently need '.wav' files as a prerequesite. Necessary proprocessings and typecastings can be done here: https://online-audio-converter.com/  
-The YouTube-to-Text converter 'youtube_2_text' can process any input without the necessity of typecasting.
+The YouTube-to-Text converter 'youtube_2_text' can process any input without the necessity of typecasting, the video transcriber can handle all common video formats.
 
 ## Controls
 

@@ -128,8 +128,15 @@ while True:
 	if question_save == 'y':
 		# Ask for the destination folder where the text should be stored
 		destination_folder = input("\nPlease specify the full path to the desired destination folder.\nYour entry should look like this: 'C:/User/...' but without quotes.\n")
+		# Aborting if a 'q' is given
+		if destination_folder == 'q':
+			break
+
 		# Ask for the file name
 		file_name = input("\nPlease specify the desired file name.\n")
+		# Aborting if a 'q' is given
+		if file_name == 'q':
+			break
 
 		# Creating individual user path from destination folder and file name
 		user_path = f"{destination_folder}/{file_name}"

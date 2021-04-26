@@ -5,7 +5,7 @@ Welcome to A2T, the easily usable tool to transcribe audio information into text
 ## Converter types
 
 - YouTube -> convert YouTube videos by just typing in a specific url
-- videos -> convert any local stored video file (e.g. zoom call recording, twitter video, facebook video, tiktok video, etc.)
+- videos -> convert any locally stored video file (e.g. zoom call recording, twitter video, facebook video, tiktok video, etc.)
 - short audio files -> convert WhatsApp voice messages, short audio news and more
 - long audio files -> convert audio books, poems, stories, political speeches and more
 - self recorded speeches -> convert microphone input into text

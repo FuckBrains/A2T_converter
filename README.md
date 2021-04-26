@@ -5,7 +5,7 @@ Welcome to A2T, the easily usable tool to transcribe audio information into text
 ## Converter types
 
 - YouTube -> convert YouTube videos by just typing in a specific url
-- videos -> convert any local stored video file (e.g. zoom call recording, twitter video, facebook video, tiktok video, etc.)
+- videos -> convert any locally stored video file (e.g. Zoom call recording, Twitter video, Facebook video, TikTok video, etc.)
 - short audio files -> convert WhatsApp voice messages, short audio news and more
 - long audio files -> convert audio books, poems, stories, political speeches and more
 - self recorded speeches -> convert microphone input into text
@@ -55,9 +55,9 @@ To confirm the given answer, press <kbd>&#9166;</kbd>.
 
 ## Hardware & Software Requirements
 
-This program can be run without much computing power. It can be executed on any modern device and all major operating systems (Windows/ macOS/ Linux) fullfilling the software requirements.  
+This program can be run without much computing power. It can be executed on any modern device using Microsoft's Windows operating system. Other OS may work but are not specifically supported.  
 A2T is written in python and currently only available in the form of multiple python modules. Therefore, you need to download python in order to execute the program files (.py files). The required storage capacity depends on the user's behavior. It can range from a few MB when only transcribing small audio files to multiple GB when downloading and converting large video files.  
-After downloading and storing this repository, open a python terminal window, navigate to the repository directory and type e.g. 'audio_2_text_la.py'. As soon as you hit <kbd>&#9166;</kbd>, the program will start.
+After downloading and storing this repository, open a python terminal window, navigate to the repository directory and type e.g. 'multi_lang_audio_2_text_la.py'. As soon as you hit <kbd>&#9166;</kbd>, the program will start.
 
 ## Code Documentation
 

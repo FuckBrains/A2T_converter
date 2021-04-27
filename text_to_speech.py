@@ -37,7 +37,7 @@ print(banner)
 
 
 prompt = r"""
-Please specify the language of the aimed output voice.
+Please specify the language of the aimed output speech.
 
 Press '1' for French.			Press '2' for German.			Press '3' for Italian.
 Press '4' for Russian.			Press '5' for Dutch.			Press '6' for Mandarin (Han Yu).
@@ -58,25 +58,25 @@ while True:
 	lang = input(prompt)
 
 	if lang == '1':
-		language = 'fr-FR'
+		language = 'fr'
 	if lang == '2':
-		language = 'de-DE'
+		language = 'de'
 	if lang == '3':
-		language = 'it-IT'
+		language = 'it'
 	if lang == '4':
-		language == 'ru-RU'
+		language == 'ru'
 	if lang == '5':
-		language = 'nl-NL'
+		language = 'nl'
 	if lang == '6':
 		language = 'zh-CN'
 	if lang == '7':
-		language = 'es-ES'
+		language = 'es'
 	if lang == '8':
 		language = 'tr'
 	if lang == '9':
-		language = 'sv-SE'
+		language = 'sv'
 	if lang == '10':
-		language = 'pt-PT'
+		language = 'pt'
 	if lang == '11':
 		language = 'ja'
 	if lang == '12':
@@ -106,7 +106,7 @@ while True:
 	if lang == '24':
 		language = 'af'
 	if lang == '':
-		language = 'en-US'
+		language = 'en'
 	if lang == 'q':
 		break
 
@@ -173,12 +173,12 @@ while True:
 		continue
 
 	# Aborting if a 'q' is given
-	if file_name == 'q':
+	if question_play == 'q':
 		break
 
 
 	print("\n------------------------------------------------------------------------------\n")
-	question_save = input("Do you want to save the computer generated speech to a text file? [y/n]\n")
+	question_save = input("Do you want to save the computer generated speech to an audio file? [y/n]\n")
 
 	if question_save == 'y':
 		# Ask for the destination folder where the speech should be stored

@@ -142,13 +142,16 @@ while True:
 	# Asking user for the wanted audio speed
 	print("\n------------------------------------------------------------------------------\n")
 	speed = input("Would you like the speech to be read fast or slowly by the computer voice? [f/s]\n")
+
+	if speed == 's':
+		tempo = True # Slow
+
+	if speed == 'f':
+		tempo = False # Fast
+
 	# Aborting if a 'q' is given
 	if speed == 'q':
 		break
-	if speed == 's':
-		tempo = True # Slow
-	if speed == 'f':
-		tempo = False # Fast
 
 
 	# Passing the text and language to the engine
@@ -162,16 +165,21 @@ while True:
 
 	print("\n------------------------------------------------------------------------------\n")
 	question_play = input("Do you wish to play the computer generated audio speech? [y/n]\n")
+
 	if question_play == 'y':
 		os.system(' start temp_speeches/temp_audio.wav')
+
 	if question_play == 'n':
 		continue
+
 	# Aborting if a 'q' is given
 	if file_name == 'q':
 		break
 
+
 	print("\n------------------------------------------------------------------------------\n")
 	question_save = input("Do you want to save the computer generated speech to a text file? [y/n]\n")
+
 	if question_save == 'y':
 		# Ask for the destination folder where the speech should be stored
 		destination_folder = input("\nPlease specify the full path to the desired destination folder.\nYour entry should look like this: 'C:/User/...' but without quotes.\n")
@@ -181,6 +189,7 @@ while True:
 
 		# Ask for the file name
 		file_name = input("\nPlease specify the desired file name with ending (.wav).\nYour entry should look like this: 'example_file.wav' but without quotes.\n")
+
 		# Aborting if a 'q' is given
 		if file_name == 'q':
 			break
@@ -196,16 +205,22 @@ while True:
 
 	if question_save == 'n':
 		pass
+
+	# Aborting if a 'q' is given
 	if question_save == 'q':
 		break
 
 
 	# Asking user if he/she wishes to continue
 	question_more = input("\nDo you wish to convert another text? [y/n]\n")
+
 	if question_more == 'y':
 		print("\n------------------------------------------------------------------------------\n")
 		continue
+
 	if question_more == 'n':
 		break
+
+	# Aborting if a 'q' is given
 	if question_more == 'q':
 		break

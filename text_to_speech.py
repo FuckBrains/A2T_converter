@@ -117,7 +117,7 @@ while True:
 
 	if input_type == 'file':
 		# Ask for the destination folder where the speech should be stored
-		origin_path = input("\nPlease specify the full path to the desired destination folder including the file name.\nYour entry should look like this: 'C:/User/.../example.txt' but without quotes.\n")
+		origin_path = input("\nPlease specify the full path to the folder including the file name.\nYour entry should look like this: 'C:/User/.../example.txt' but without quotes.\n")
 		# Loading text file
 		filename = origin_path
 		with open(filename, 'r') as f:

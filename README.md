@@ -9,6 +9,12 @@ Welcome to A2T, the easily usable tool to transcribe audio information into text
 - short audio files -> convert WhatsApp voice messages, short audio news and more
 - long audio files -> convert audio books, poems, stories, political speeches and more
 - self recorded speeches -> convert microphone input into text
+- text to speech -> Validate the other programs
+
+## Text-to-speech
+
+With 'text_2_speech' you can convert text into computer generated speeches. This can be helpful if you have no audio file available and want to create your own. Also, this program can be used to validate the other scripts' accuracy when transcribing.  
+Just create an audio file with 'text_2_speech' and use that file to transcribe its audio into text. Ideally, the generated text should be equal to the text you provided for 'text_2_speech'.
 
 ## Languages
   
@@ -63,6 +69,11 @@ After downloading and storing this repository, open a python terminal window, na
 
 The documentation for this project can be found under 'docs/build/html/index.html'. Navigate to the file on your local machine and open it in a web browser.
 
+## Repository structure
+
+All directories in this repository serve a distinct purpose, e.g. containing meta data. Deleting one or more of these directories or files in them can cause programs to throw errors and to stop working. So, don't delete meta data!  
+Since most temporary data only exist for a short time and are required for few internal operations, they are overwritten in each program cycle, meaning that no additional storage space is required on your device.
+
 ## Resources & Links
 
 https://www.python.org/ (Python)  
@@ -73,3 +84,8 @@ https://pypi.org/project/SpeechRecognition/ (SpeechRecognition)
 https://cloud.google.com/speech-to-text (Google Cloud Speech-to-Text API)  
 https://www.sphinx-doc.org/en/master/# (Sphinx)  
 https://readthedocs.org/ (Read the Docs)  
+
+## Contact
+
+You have questions about the project or want to report a bug or feedback in general?  
+Contact me via sven.eschlbeck@t-online.de

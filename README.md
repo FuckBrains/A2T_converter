@@ -69,6 +69,11 @@ After downloading and storing this repository, open a python terminal window, na
 
 The documentation for this project can be found under 'docs/build/html/index.html'. Navigate to the file on your local machine and open it in a web browser.
 
+## Repository structure
+
+All directories in this repository serve a distinct purpose, e.g. containing meta data. Deleting one or more of these directories or files in them can cause programs to throw errors and to stop working. So, don't delete meta data!  
+Since most temporary data only exist for a short time and are required for few internal operations, they are overwritten in each program cycle, meaning that no additional storage space is required on your device.
+
 ## Resources & Links
 
 https://www.python.org/ (Python)  

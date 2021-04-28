@@ -10,6 +10,11 @@ Welcome to A2T, the easily usable tool to transcribe audio information into text
 - long audio files -> convert audio books, poems, stories, political speeches and more
 - self recorded speeches -> convert microphone input into text
 
+## Text-to-speech
+
+With 'text_2_speech' you can convert text into computer generated speeches. This can be helpful if you have no audio file available and want to create your own. Also, this program can be used to validate the other scripts' accuracy when transcribing.  
+Just create an audio file with 'text_2_speech' and use that file to transcribe its audio into text. Ideally, the generated text should be equal to the text you provided for 'text_2_speech'.
+
 ## Languages
   
 Note that the software is only applicable to audio data in supported languages. Transcribing data of unsopported languages with this API can cause wrong and unintentional transcriptions.  

@@ -5,26 +5,44 @@ import speech_recognition as sr
 
 banner = r'''
 
-
-			   #####
-			   ##		#####   ########
-			   ##		   ##      ##
-			   ##   	#####      ##
-			 ####		##         ##
-			 ####  		#####      ##ext    small/medium
+                                                                                
+                             .             .::::::::::::::::::::::::::-`        
+                             oyo-         `hhyyyyyyyyyyyyyyyyyyyyyyyyhhs        
+                         ..`.shhhy+.      `hh:                       ohs        
+                    -+syhhhhhhhhhhhy.     `hh:                       ohs        
+                  .shhy+:....shhy+-       `hh:   ooooooooooooooo/    ohs        
+                  yhhs`      os:          `hh:   o++++++++++++++/    ohs        
+                 -hhy`                    `hh:                       ohs        
+                 +hho                     `hh:                       ohs        
+                 +hh+                     `hh:   hyyyyyyyyyyyyyyo    ohs        
+                 ://-                     `hh:   :::::::::::::::-    ohs        
+                                          `hh:                       ohs        
+               -+ssso+-                   `hh:   +++++++++++++++:    ohs        
+             .shhhhhhhhs`                 `hh:   sssssssssssssss+    ohs        
+             shhhhhhhhhho                 `hh:                       ohs        
+            .hhhhhhhhhhhh                 `hh:                       ohs        
+            .hhhhhhhhhhhh                 `hh:                       ohs        
+            .hhhhhhhhhhhh                 `hh/```````````````````````ohs        
+        .:- .hhhhhhhhhhhh  -:`            `hhhhhhhhhhhhhhhhhhhhhhhhhhhho        
+        yhh``yhhhhhhhhhhs -hho              ```````````:oo+````````````         
+        ohh/ /hhhhhhhhhh- +hh/                         /hho                     
+        `yhh: .oyhhhhy+. /hhs`                         +hho                     
+         `shho-  ````  -shho`                         `yhh:                     
+           :ohhyo///+ohhyo-                 :s+      `ohhy`                     
+             `-/oyhhs+/-                 .+yhho...-:+yhhy.                      
+                 +hh:                   shhhhhhhhhhhys+-                        
+           `-::::shh+::::-`             `/shhho.`..                             
+           shhhhhhhhhhhhhh+                ./y+                                 
+            ..............                    `                                 
+                                                                              
 
             	  [Sven Eschlbeck] [2021]
 
 
-##############################################################################
-##############################################################################
 
-Hello! Welcome to 'MULTI LANGUAGE AUDIO2TEXT for small audio files'.
+Hello! Welcome to 'MULTI LANGUAGE AUDIO2TEXT for small and medium audio files'.
 
-Enter 'q' to quit any time.
-
-##############################################################################
-##############################################################################
+Enter 'q' to quit.
 '''
 
 print(banner)
@@ -46,6 +64,7 @@ Leave blank for default (English).
 """
 
 
+print("---------------------------------------------------------------------------------------------\n")
 while True:
 	# Asking user to specify the path to the audio file
 	path = input("Please specify the full path to your audio file (including file name).\nYour entry should look like this: 'C:/User/.../example.wav' but without quotes.\n")

@@ -9,35 +9,39 @@ from pydub.silence import split_on_silence
 banner = r'''
 
 
-			 ######
-			########
-			########
-			########
-			  ####
-			  ####		#####   ########
-			  ####		   ##      ##
-			  ####   	#####      ##
-			   ##		##         ##
-			   ##  		#####      ##
-			   #
-			   #
-			####
-			#
-			#
+                                                  `..`                                                
+                                          ``.--.`:++oo:`                 `.--::::::-.                 
+                                   `.-::::/++++o/+oosys:-`          -+shddhdmmmmmmmmds`               
+                               `.-:-/++o+/++osy+/+osyyys/.    `.-/oymmmNNmmNNNNNNNNNNms               
+                              `:/+o-/+os:/+++ss///+oydNNmhyyhhddddhdNNNNNNdNNNNNNNNNNmh-              
+                              .:/++-/+oo:/+oshs:/ososNMNNNmmmmmmmdhdNNNNNNhNNNNNNNNNNNd:              
+                              `-/++-/+o/:/+sydy:oossssdNNNmmmmmmddddNNNNNNmNNNNNNNNNNmh`              
+                    `.:+oshyhdy-/+o-:+o/:+osyds:/sssysshNNmmmmdddddhdNNmmmmdNmmmmmmdy+.               
+                 `+hmmddddmdddm+:+o::/+o::+oyhyo://+ssso++/::--...--:+syyhhosso+/-`                   
+              .+ysosyyssysss+//o:/+o/:/+s::+symmo-:/+ss:`                                             
+            `oh/               -//:/o/:+ys//oyso:--:/oo.                                              
+           `ys`                 -//+ooo/://////o::::/+/.                                              
+           ys                   `-//+++:---:///++///+o:                                               
+          /d`                     .-::::----:///////:`                                                
+          ho                       ..----------://:-`                                                 
+         .m-                       `.--:--:::/++o+/:-`                                                
+         /d`                        ..-:::::/+oosoo/:-`                                               
+         +d                          ---:::://+oooo+/:-                                               
+         +h                          .://::////+++oo+/:.                                              
+         +h                          `-:///:///+++ooo+/-`                                             
+         +d                           .://+++++++ooooo+/-`                                            
+         /d                            .:/++++ooooooooo+/-`                                           
+         /d`                            -://+++oooooooo++:-`                                          
+         :d`                            `-://++ooooooooo+/:-.`                                    
+
 
               		[Sven Eschlbeck] [2021]
 
 
 
-##############################################################################
-##############################################################################
-
 Hello! Welcome to 'MIC2TEXT'.
 
-Enter 'q' to quit any time.
-
-##############################################################################
-##############################################################################
+Enter 'q' to quit.
 '''
 
 print(banner)

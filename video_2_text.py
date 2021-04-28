@@ -9,26 +9,52 @@ from moviepy.editor import AudioFileClip
 
 banner = r'''
 
-	                        _____
-	__   ___    _          |  __ |  _______
-	\ \ / (_)__| |___ ___  |_| / / |__   __|
-	 \ V /| / _` / -_) _ \    / /     | |
-	  \_/ |_\__,_\___\___/   / /___   |_|ext
-	                        /______|
 
-		[Sven Eschlbeck] [2021]
+                                                    `-ohdy-                     
+                                                .-:/:-:+ydd-                    
+                                            -+yddy+-....../o.                   
+                                       `-:/+shdddddhs/.`````                    
+                                   ./oy+----.-:oyhhyo/.                         
+                               .-+dmddddho:..````..`                            
+                          `:::/:--:+yddhhhy+.``                                 
+                      .:ohddds/-....../o/-`                                     
+                  .-:/:+shddddhyo:````                                          
+             `-+yho/---..-:oyys+:.                                              
+         `.:+ydmdddhy+-.`````.`                       ``..-`````+.              
+       -/://--:oyhhhhs+-`                  ``.-.`````osyyy/`.../h+              
+       :hosoyo/-.-/:.`         ``..-.````.ssyyy-`...oddddo...-/ddh              
+        +yyhyyyyo/. ``..-`````-syyys....-ydddd/..--+dddmh::://hddh-             
+         +hhhhhhhhhssyyyo....-hdddh:..--sdddms:::/+ddhhysooooooooo+             
+         `hhhddddddysdmy-..--hdddd+:::/oddhhyooooooooooooooooooooos             
+          ohyhmmmmmmdmm/:://sddhhyooooooooooooooooooooooooooooooooo-            
+          :hsysssdddhhsooooooooooooooooooooooooooooooooooooooooosss+            
+           sooooooooooooooooooo+-:/+ooooooooooooooooosssssssssssssss`           
+           +ooooooooooooooooooo/   ``.:/+oosssssssssssssssssssssssss:           
+           -ooooooooooooooooooso`        `.-/+oosssssssssssssssssssso           
+            soosoossssssssssssss-             `./sssssssssssssssssssy`          
+            +sssssssssssssssssss+             `:osssssssyyyyyyyyyyyyy/          
+            .yyyyyyyyyyyyyyyyyyyy.```.......:+yyyyyyyyyyyyyyyyyyyyyyys          
+             syyyyyyyyyyyyyyyyyyy/....----/syyyyyyyyyyyyyyyyyyyyyyyyyh.         
+             /yyyyyyyyyyyyyyyyyyys----::oyyyyyyyyyyyyyyyyyyyyyhhhhhhhh/         
+             .yyyyyyyyyyyyyyyyyyyy/::+syyyyyyyyyyyyhhhhhhhhhhdddhdmhhhy         
+              syyyyyyyyyyyyyyyyyyysoyhyhhhhhhhhhhhddddsmddhhhNNmdmNdhhh.        
+              /yyyyyyyyyyyyyhhhhhhhhhhhhdddhhhmhhhdNNdhNNNNmmmdddddhhhh/        
+              `hyhhhhhhhhhhdddddhyyyyyyhhhhdmNNNmmmddddhhhhhhhhhhhysso/`        
+               shhhddohmmdhdhmNhdmNNNmmmddddhhhhhhhhhhhyso+//:-.``              
+               :hhhmNhNNNmmmmdddhhhhhhhhhhhhyso+/::-.`                          
+               `hhhhdhhhhhhhhhhhyyso+/:-..`                                     
+               `ohhhhhhysso+//:-...........``````````````````                   
+             ``.-:::::::::::::::--------..........```````````````               
 
 
-###################################################################
-###################################################################
+				[Sven Eschlbeck] [2021]
+
+
+
 
 Hello! Welcome to 'VIDEO2TEXT'.
 
-Enter 'q' to quit any time.
-
-###################################################################
-###################################################################
-
+Enter 'q' to quit.
 '''
 
 # Printing banner with welcome message
@@ -52,6 +78,7 @@ Leave blank for default (English).
 """
 
 
+print("---------------------------------------------------------------------------------------------\n")
 while True:
 	# Asking user to specify the path to the video file
 	path = input("Please specify the full path to your video file (including file name).\nYour entry should look like this: 'C:/User/.../example.mp4' but without quotes.\n")

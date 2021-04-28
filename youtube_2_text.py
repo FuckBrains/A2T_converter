@@ -11,32 +11,32 @@ from pydub.silence import split_on_silence
 banner = r'''
 
 
+                   
+             ``....----------------....``                                                             
+         -+syyyyyyyyyyyyyyyyyyyyyyyyyyyyyys+-                                                         
+        /yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy/                                                        
+       `yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy`                                                       
+       -yyyyyyyyyyyyyyyoyyyyyyyyyyyyyyyyyyyyyy-                                                       
+       :yyyyyyyyyyyyyyy `-+syyyyyyyyyyyyyyyyyy:                                                       
+       /yyyyyyyyyyyyyyy     .:oyyyyyyyyyyyyyyy/                                                       
+       +yyyyyyyyyyyyyyy        `/yyyyyyyyyyyyy+                                                       
+       /yyyyyyyyyyyyyyy     .:oyyyyyyyyyyyyyyy/                                                       
+       :yyyyyyyyyyyyyyy `-+syyyyyyyyyyyyyyyyyy:                                                       
+       -yyyyyyyyyyyyyyyoyyyyyyyyyyyyyyyyyyyyyy-                                                       
+       `yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy`                                                       
+        /yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy/                                                        
+         -+syyyyyyyyyyyyyyyyyyyyyyyyyyyyyys+-                                                         
+             ``....----------------....``                                                                                                                                                                                                
+                                                                            
 
-		__   __  _______
-		\ \_/ / |__   __|
-		 \   /     | |
-		  |_|      |_|
-		                     #####
-		                        ##
-		                     #####
-		                     ##
-		                     #####
-		                      	       _______
-		                     	      |__   __|
-		                                 | |
-		                                 |_|	
-         [Sven Eschlbeck] [2021]
+               [Sven Eschlbeck] [2021]
 
 
-##############################################################################
-##############################################################################
+
 
 Hello! Welcome to 'YouTube2Audio'.
 
-Enter 'q' to quit any time.
-
-##############################################################################
-##############################################################################
+Enter 'q' to quit.
 '''
 
 print(banner)
@@ -59,8 +59,9 @@ Leave blank for default (English).
 
 
 while True:
+	print("---------------------------------------------------------------------------------------------\n")
 	# Asking the user for specific url
-	url = input("\nPlease specify the full url to the YouTube video.\nYour entry should look like this: 'https://www.youtube.com/...' but without quotes.\n")
+	url = input("Please specify the full url to the YouTube video.\nYour entry should look like this: 'https://www.youtube.com/...' but without quotes.\n")
 	if url == 'q':
 		break
 

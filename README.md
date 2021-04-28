@@ -9,6 +9,7 @@ Welcome to A2T, the easily usable tool to transcribe audio information into text
 - short audio files -> convert WhatsApp voice messages, short audio news and more
 - long audio files -> convert audio books, poems, stories, political speeches and more
 - self recorded speeches -> convert microphone input into text
+- text to speech -> Validate the other programs
 
 ## Text-to-speech
 

@@ -7,30 +7,57 @@ import os
 
 banner = r'''
 
-	##### ##### # # #####   ##### ####
-	  #   ##     #    #       #   #  #
-	  #   ##### # #   #       #   ####
 
-	##### ###### ###### ###### ###### #     #
-	#     #    # #      #      #      #     #
-	##### ###### ###### ###### #      #######
-	    # #      #      #      #      #     #
-	##### #      ###### ###### ###### #     #
+MMMMMMMMMMMMMMMMMMMMMMMMMMMNmdhyyssooooossssssyyhddmNMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMNmhyoooooooooooooossssssssssssssyhmNMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMmhsoooooooooooooooooossssssssssssssssssyhmMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMmhoooooooooooooooooooooosssssssssssssssssssssshmMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMNhsoooooooooooooooooooooooosssssssssssssssssssssssssdNMMMMMMMMMMMMM
+MMMMMMMMMMMNyooooooo/-` .:+ooooooooooooossssssssssssssssssssssssssshNMMMMMMMMMMM
+MMMMMMMMMNhoooooo+-`       ./ooooooooooossssssssssssssssssssssssssssshNMMMMMMMMM
+MMMMMMMMdoooooo+.            .+ooooooooosssssssssssssssssssssssssssssssdMMMMMMMM
+MMMMMMNsooooo+-                :oooooooossssssssssssssssssssssssssssssssyNMMMMMM
+MMMMMmoooooo:                   :ooooooosssssssssssssssssssss/--:ossssssssmMMMMM
+MMMMdooooo+.                     /oooooossssssssssssssssssss+    `/ssssssssdMMMM
+MMMdooooo+`                      `oooooosssssssssssssssssssss/`    .osssssssdMMM
+MMmooooo+                         +ooooosssssssssssssss/--/ssso:     /sssssssmMM
+MNooooo+`                         +ooooosssssssssssssso    `+sss+`    /sssssssNM
+Myooooo.                          +ooooosssssssssssssss/`    :ssso`    +sssssshM
+Nooooo/                           /ooooosssssssss/..-osso:    -sss+    `ossssssN
+hooooo`                           `+oooosssssssss`    :sss/    :sss:    :ssssssh
+soooo+                              -ooossssssssso-    :sss-    osso`   `ossssss
+ooooo:                                /osssssssssss:    +sso    :sss-    +ssssss
+ooooo-                               `/ossssssssssso    :sss`   -sss:    /ssssss
+ooooo-                            `+oooossssssssssso    :sss`   -sss:    /ssssss
+ooooo:                             /oooosssssssssss:    +sso    :sss-    +ssssss
+soooo+                          -/oooooossssssssso-    :sss-    osso`   `ossssss
+hooooo`                          ./ooooosssssssss`    :sss:    :sss:    :ssssssh
+Nooooo/                          `+ooooosssssssss/..-osso:    -sss+    `ossssssN
+Myooooo.                         `oooooosssssssssssssss/`    :ssso`    +sssssshM
+MNsoooo+`                        :oooooosssssssssssssso    `+sss+`    /sssssssNM
+MMmooooo+`           -/+++++++++oooooooosssssssssssssss/--/ssso:     /sssssssmMM
+MMMdooooo+`        `+ooooooooooooooooooosssssssssssssssssssss/`    .osssssssdMMM
+MMMMdooooo+.       +oooooooooooooooooooossssssssssssssssssss+    `/ssssssssdMMMM
+MMMMMmoooooo:     .ooooooooooooooooooooosssssssssssssssssssss/--:ossssssssmMMMMM
+MMMMMMNsooooo+-   -ooooooooooooooooooooossssssssssssssssssssssssssssssssyNMMMMMM
+MMMMMMMMdoooooo+- :ooooooooooooooooooooosssssssssssssssssssssssssssssssdMMMMMMMM
+MMMMMMMMMNhoooooo+/ooooooooooooooooooooossssssssssssssssssssssssssssshNMMMMMMMMM
+MMMMMMMMMMMNyooooooooooooooooooooooooooossssssssssssssssssssssssssshNMMMMMMMMMMM
+MMMMMMMMMMMMMNhsoooooooooooooooooooooooosssssssssssssssssssssssssdNMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMmhoooooooooooooooooooooosssssssssssssssssssssshmMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMmhsoooooooooooooooooossssssssssssssssssyhmMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMNmhyoooooooooooooossssssssssssssyhmNMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMNmdhyyssooooossssssyyhddmNMMMMMMMMMMMMMMMMMMMMMMMMMMM
 
 
-		[Sven Eschlbeck] [2021]
+			[Sven Eschlbeck] [2021]
 
 
-###################################################################
-###################################################################
+
 
 Hello! Welcome to 'TEXT2SPEECH'.
 
-Enter 'q' to quit any time.
-
-###################################################################
-###################################################################
-
+Enter 'q' to quit.
 '''
 
 print(banner)

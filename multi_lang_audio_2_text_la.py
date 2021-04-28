@@ -8,26 +8,44 @@ from pydub.silence import split_on_silence
 
 banner = r'''
 
-
-			   #####
-			   ##		#####   ########
-			   ##		   ##      ##
-			   ##   	#####      ##
-			 ####		##         ##
-			 ####  		#####      ##ext    large
+                                                                                
+                             .             .::::::::::::::::::::::::::-`        
+                             oyo-         `hhyyyyyyyyyyyyyyyyyyyyyyyyhhs        
+                         ..`.shhhy+.      `hh:                       ohs        
+                    -+syhhhhhhhhhhhy.     `hh:                       ohs        
+                  .shhy+:....shhy+-       `hh:   ooooooooooooooo/    ohs        
+                  yhhs`      os:          `hh:   o++++++++++++++/    ohs        
+                 -hhy`                    `hh:                       ohs        
+                 +hho                     `hh:                       ohs        
+                 +hh+                     `hh:   hyyyyyyyyyyyyyyo    ohs        
+                 ://-                     `hh:   :::::::::::::::-    ohs        
+                                          `hh:                       ohs        
+               -+ssso+-                   `hh:   +++++++++++++++:    ohs        
+             .shhhhhhhhs`                 `hh:   sssssssssssssss+    ohs        
+             shhhhhhhhhho                 `hh:                       ohs        
+            .hhhhhhhhhhhh                 `hh:                       ohs        
+            .hhhhhhhhhhhh                 `hh:                       ohs        
+            .hhhhhhhhhhhh                 `hh/```````````````````````ohs        
+        .:- .hhhhhhhhhhhh  -:`            `hhhhhhhhhhhhhhhhhhhhhhhhhhhho        
+        yhh``yhhhhhhhhhhs -hho              ```````````:oo+````````````         
+        ohh/ /hhhhhhhhhh- +hh/                         /hho                     
+        `yhh: .oyhhhhy+. /hhs`                         +hho                     
+         `shho-  ````  -shho`                         `yhh:                     
+           :ohhyo///+ohhyo-                 :s+      `ohhy`                     
+             `-/oyhhs+/-                 .+yhho...-:+yhhy.                      
+                 +hh:                   shhhhhhhhhhhys+-                        
+           `-::::shh+::::-`             `/shhho.`..                             
+           shhhhhhhhhhhhhh+                ./y+                                 
+            ..............                    `                                 
+                                                                              
 
             	  [Sven Eschlbeck] [2021]
 
 
-##############################################################################
-##############################################################################
 
 Hello! Welcome to 'MULTI LANGUAGE AUDIO2TEXT for large audio files'.
 
-Enter 'q' to quit any time.
-
-##############################################################################
-##############################################################################
+Enter 'q' to quit.
 '''
 
 print(banner)
@@ -49,6 +67,7 @@ Leave blank for default (English).
 """
 
 
+print("---------------------------------------------------------------------------------------------\n")
 while True:
 	# Asking user to specify the path to the audio file
 	path = input("Please specify the full path to your audio file.\nYour entry should look like this: 'C:/User/...' but without quotes.\n")

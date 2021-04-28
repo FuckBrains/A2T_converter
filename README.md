@@ -79,3 +79,8 @@ https://pypi.org/project/SpeechRecognition/ (SpeechRecognition)
 https://cloud.google.com/speech-to-text (Google Cloud Speech-to-Text API)  
 https://www.sphinx-doc.org/en/master/# (Sphinx)  
 https://readthedocs.org/ (Read the Docs)  
+
+## Contact
+
+You have questions about the project or want to report a bug or feedback in general?  
+Contact me via sven.eschlbeck@t-online.de

@@ -65,6 +65,10 @@ This program can be run without much computing power. It can be executed on any 
 A2T is written in python and currently only available in the form of multiple python modules. Therefore, you need to download python in order to execute the program files (.py files). The required storage capacity depends on the user's behavior. It can range from a few MB when only transcribing small audio files to multiple GB when downloading and converting large video files.  
 After downloading and storing this repository, open a python terminal window, navigate to the repository directory and type e.g. 'multi_lang_audio_2_text_la.py'. As soon as you hit <kbd>&#9166;</kbd>, the program will start.
 
+## Software dependencies
+
+All required libraries, packages or frameworks can be seen in the environment.yaml file. They need to be installed on your machine (Anaconda environment recommended) in order to execute all programs correctly.
+
 ## Code Documentation
 
 The documentation for this project can be found under 'docs/build/html/index.html'. Navigate to the file on your local machine and open it in a web browser.
